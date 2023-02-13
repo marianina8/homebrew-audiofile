@@ -5,11 +5,11 @@
 class Audiofile < Formula
   desc ""
   homepage "https://github.com/marianina8"
-  version "0.3"
+  version "0.4"
 
   on_macos do
-    url "https://github.com/marianina8/audiofile/releases/download/v0.3/audiofile_Darwin_all.tar.gz"
-    sha256 "83f1d40adb7c4302a101cc0f589e70bc2efec04a751fe7a4b746349d7bd42b11"
+    url "https://github.com/marianina8/audiofile/releases/download/v0.4/audiofile_Darwin_all.tar.gz"
+    sha256 "dd8fd34a2bfa3a973c01a8070790abd99b26e7d70817f7c314fcc73884b7c5c1"
 
     def install
       bin.install "audiofile"
@@ -18,16 +18,16 @@ class Audiofile < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marianina8/audiofile/releases/download/v0.3/audiofile_Linux_arm64.tar.gz"
-      sha256 "8a7cf8df1cbf5056333ce89665fb8c85daa001e08a04ffed6b1f2c0f47de5025"
+      url "https://github.com/marianina8/audiofile/releases/download/v0.4/audiofile_Linux_arm64.tar.gz"
+      sha256 "1737e4901f6eac44bde974c5393d9b20557f578e53e1abb107aeb1b1e5a4ef4b"
 
       def install
         bin.install "audiofile"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marianina8/audiofile/releases/download/v0.3/audiofile_Linux_x86_64.tar.gz"
-      sha256 "b8556b6386c8c88805782827fa4675be0e26c9a0a1d2fbf523a0317aa4f0a5a7"
+      url "https://github.com/marianina8/audiofile/releases/download/v0.4/audiofile_Linux_x86_64.tar.gz"
+      sha256 "6d20c1239d1fb10afc685857ed0b8bc7c45b18daa4946aca4f1b36089bf56e05"
 
       def install
         bin.install "audiofile"
